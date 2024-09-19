@@ -1,0 +1,125 @@
+*{
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+.regular-txt{
+    font-weight: 300;
+}
+.regular-font-size{
+    font-size: 22px;
+}
+body{
+    background: url(../images/background.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+  
+}
+body::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.33);
+    backdrop-filter: blur(7px);
+}
+.weather-card{
+
+    z-index: 1;
+    background: linear-gradient( to bottom right ,rgb(0,0,0,0.15),rgb(255,255,255,0.15));
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+}
+
+/* ----------------input container----------------------- */
+.input-container{
+    position: relative;
+}
+
+/* search input  */
+.city-input{
+    background: rgba(0, 0, 0, 0.33);
+    border: 1px solid transparent;
+    outline: none !important;
+    font-weight: 500;
+    transition: all 0.25s;
+    color: rgba(255, 255, 255, 0.663)!important;
+    padding-right: 35px !important;
+}
+.city-input::placeholder{
+    color: rgba(255, 255, 255, 0.435);
+}
+.city-input:focus{
+    border: 2px solid rgba(0, 0, 0, 0.33) ;
+    background: rgba(0, 0, 0, 0.33) !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
+.btn-search{
+    position: absolute;
+    top: 20px;
+    left: 90%;
+    transform: translateY(-50%);
+}
+.btn-search:focus{
+border: none !important;
+}
+/* ----------------end  input container----------------------- */
+/*----------------------- weather info container -------------------------- */
+.weather-info{
+    display: flex;
+    flex-direction: column;
+    gap:25px
+}
+.weather-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.img-weather-container{
+    width: 120px;
+    height: 120px;
+}
+/*----------------------- end dweather info container -------------------------- */
+/*---------------- condition .container ---------------- */
+.condition-icon{
+    margin-inline-end: 22px !important;
+}
+
+/*----------------end  condition .container ---------------- */
+/* ------------------------------weather of days  container----------------------- */
+.weather-of-days-container{
+    display: flex;
+    gap: 19px;
+    overflow: scroll;
+    padding-bottom: 15px !important;
+}
+.weather-of-days-container::-webkit-scrollbar{
+    height: 8px;
+    width: 0px;
+}
+.weather-of-days-container::-webkit-scrollbar-thumb{
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 99px;
+}
+.weather-of-days{
+background:  rgba(0, 0, 0, 0.33);
+border-radius: 9px;
+padding: 10px !important;
+}
+.weather-of-days:hover{
+    background-color: rgba(0, 0, 0, 0.43) ;
+}
+.weather-of-days-img{
+    width: 60px;
+    height: 60px;
+}
+/* ------------------------------ end weather of days  container----------------------- */
+

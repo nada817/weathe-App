@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+<link rel="stylesheet" href="./css/all.min.css">
+<link rel="stylesheet" href="./css/bootstrap.min.css">
+<link rel="stylesheet" href="./css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container-fluid vh-100  d-flex justify-content-center align-items-center">
+        <div class="row w-100 d-flex justify-content-center mx-3">
+            <!----------------- container weather card ---------------- -->
+            <div class="col-sm-7 col-md-5 col-lg-4 col-xl-4 p-3  weather-card ">
+                <!------------------- main-container  -------------------- -->
+                <div class="main-container py-4 ">
+                    <div class="input-container">
+                        <input id="searchInput" type="text" class="form-control w-100 m-auto p-1 city-input" placeholder="Enter City">
+                        <button id="searchBtn" class="btn btn-search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                </div>
+                <!------------------- end  main-container  -------------------- -->
+              
+<!---------------- weather info container -------------------- -->
+<div id="weatherAllData" class="weather-info d-none ">
+    <div class="location-container">
+      <div class="location-data d-flex justify-content-between align-items-center">
+        <div class="location d-flex align-items-center ">
+            <span class="pe-2">
+                <i class="fa-solid fa-location-dot fa-lg"></i>
+            </span>
+            <div class="city-name ">
+                jakarta
+            </div>
+        </div>
+        <div class=" regular-txt current-date">
+            wed , 17 sep
+        </div>
+      </div>
+    </div>
+    <div class="weather-container">
+        <img src="./images/weather/clouds.svg" alt="" class="img-weather-container">
+        <div class="txt-weather-container">
+            <h1 class="regular-font-size temprature">
+                29 °C
+            </h1>
+            <h3 class="regular-txt regular-font-size weather-condition">
+                clouds 
+            </h3>
+        </div>
+    </div>
+
+    <div class="weather-container-conditions d-flex justify-content-between ">
+                    <div class="condition-item d-flex align-items-center ">
+                        <div class="condition-icon ">
+                            <span>
+                                <i class="fa-solid fa-droplet fa-lg"></i>
+                            </span>
+                        </div>
+                        <div class="condition-txt ">
+                          <p class="regular-txt  ">
+                            humainity 
+                          </p>
+                          <p class="hum-value">
+                            55%
+                          </p>
+                        
+                        </div>
+                    </div>
+
+                    <div class="condition-item  d-flex align-items-center">
+                        <div class="condition-icon">
+                            <span>
+                                <i class="fa-solid fa-wind fa-lg"></i>
+                            </span>
+                        </div>
+                        <div class="condition-txt ">
+                          <p class="regular-txt">
+                            Wind Speed
+                          </p>
+                          <p class="wind-value">
+                            2 M\s
+                          </p>
+                        </div>
+                    </div>
+      
+    </div>
+
+    <div class="weather-of-days-container text-center">
+    </div>
+</div>             
+
+<!----------------end  weather info container -------------------- -->
+
+<!--========================== section message ========================= -->
+
+<!--============= lma ykon lsa fady m3maltsh search ================ -->
+<section id="searchFadySection" class="section-mess text-center">
+    <img src="./images/message/search-city.png " alt="" class="w-50 ">
+    <div class="section-mess-txt py-4">
+        <h4>
+            search city
+        </h4>
+        <p class="regular-txt text-capitalize py-4">
+            find out the weather condition of the city
+        </p>
+    </div>
+</section>
+
+
+
+<!-- ------------lam a3l search 4lt -------------- -->
+<section id="notFoundSection" class="section-mess text-center d-none">
+
+    <img src="./images/message/not-found.png " alt="" class="w-50 ">
+    <div class="section-mess-txt py-4">
+        <h4>
+           Not Found
+        </h4>
+        <p class="regular-txt text-capitalize py-4">
+            find out the weather condition of the city
+        </p>
+    </div>
+    
+</section>
+   
+
+<!--========================== end section message ========================= -->
+            </div>
+            <!-----------------  end container weather card ---------------- -->
+          
+          
+
+
+           
+        </div>
+    </div>
+
+
+
+
+   <script src="./js/bootstrap.bundle.min.js"></script>
+   <script src="./js/main.js"></script> 
+</body>
+</html>
